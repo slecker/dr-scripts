@@ -19,12 +19,14 @@ training_manager_priority_skills:
 - Parry
 - Shield
 hunting_info:
-- :zone: 1518
-- :zone: 1519
+- :zone: 7263
+- :zone: 7264
+- :zone: 7265
+- :zone: 7266
+- :zone: 7267
   stop_on:
   - Brawling
   - Light Thrown
-  - Large Edged
   - Small Edged
   - Parry
 
