@@ -19,7 +19,8 @@ training_manager_priority_skills:
 - Parry
 - Shield
 hunting_info:
-- :zone: rock trolls
+- :zone: 1518
+- :zone: 1519
   stop_on:
   - Brawling
   - Light Thrown
