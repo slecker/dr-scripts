@@ -9,6 +9,26 @@
 # However, you will probably end up training them all since they each have very useful abilities
 # The other Supernatural skills are: Warding, Debilitation
 
+hunting_file_list:
+#- backtrain2
+#- backtrain
+- setup
+
+### COMBAT SETTINGS ###
+stances:
+  Light Thrown:
+  - Evasion
+  - Shield Usage
+  - Parry Ability
+  Small Edge:
+  - Parry Ability
+  - Evasion
+  - Shield Usage
+
+### MISC HUNTING SETTINGS ###
+fatigue_regen_threshold: 35
+dance_threshold: 0
+
 # Hunting settings
 training_manager_hunting_priority: true
 training_manager_priority_skills:
@@ -201,6 +221,8 @@ health_threshold: 60
 quit_on_status_warning: true
 braid_item: grass
 saferoom_health_threshold: 25
+safe_room: 6164
+safe_room_id: 6164
 status_monitor_no_window: true
 bankbot_deposit_threshold: 0
 
