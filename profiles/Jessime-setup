@@ -1,5 +1,5 @@
 # https://elanthipedia.play.net/Barbarian#Circle_Requirements
-# 5 Weapons (only 4 are needed to circle): Brawling, Heavy Thrown, Polearms, Large Edged, Twohanded Edged
+# 4 Weapons (only 4 are needed to circle): Brawling, Light Thrown, Large Edged, Small Edged
 # 2 Armors: Light Armor, Shield Usage
 # 4 Survivals: Athletics, Perception, Skinning, Stealth (Does not include Evasion)
 # 1 Lore: Appraisal
@@ -15,6 +15,7 @@ training_manager_priority_skills:
 - Brawling
 - Light Thrown
 - Large Edged
+- Small Edged
 - Parry
 - Shield
 hunting_info:
@@ -23,6 +24,7 @@ hunting_info:
   - Brawling
   - Light Thrown
   - Large Edged
+  - Small Edged
   - Parry
 
 # Gear settings
@@ -99,6 +101,7 @@ weapon_training:
   Brawling: ''
   Light Thrown: rock
   Large Edged: black steel sword
+  Small Edged: scimitar
 use_stealth_attacks: true
 skinning:
   skin: true
