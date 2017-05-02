@@ -1,7 +1,7 @@
 # https://elanthipedia.play.net/Barbarian#Circle_Requirements
 # 4 Weapons (only 4 are needed to circle): Brawling, Light Thrown, Large Edged, Small Edged
 # 3 Armors: Light Armor, Shield Usage, Chain Armor
-# 4 Survivals: Athletics, Perception, Skinning, Stealth (Does not include Evasion)
+# 3 Survivals: Athletics, Perception, Skinning (Does not include Evasion)
 # 1 Lore: Appraisal
 # 1 Supernatural: Augmentation
 
@@ -158,6 +158,7 @@ crossing_training:
 #- Engineering
 - First Aid
 #- Scholarship
+#- Stealth
 - Outdoorsmanship
 #- Outfitting
 - Mechanical Lore
