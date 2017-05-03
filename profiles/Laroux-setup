@@ -27,6 +27,10 @@ hunting_info:
   - Tactics
   - Skinning
   
+hunting_buddies:
+ - Jessime
+ - Rafaeli
+  
 hunting_file_list:
 #- backtrain2
 #- backtrain
