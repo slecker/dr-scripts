@@ -145,13 +145,11 @@ listen: true
 train_with_spells: false
 training_nonspells:
   Augmentation: berserk avalanche
-  Performance: hum rudiments
   
 crossing_training:
 - Locksmithing
 #- Thievery
 - Augmentation
-- Utility
 #- Perception
 - Appraisal
 - Athletics
@@ -162,10 +160,26 @@ crossing_training:
 - Outdoorsmanship
 #- Outfitting
 - Mechanical Lore
+listen: true
 favor_goal: 8
 favor_god: Trothfang
 
-
+crossing_training_requires_movement:
+#- Alchemy
+# - Appraisal
+- Augmentation
+- Athletics
+- Attunement
+#- Empathy
+#- Engineering
+- Forging
+- Outfitting
+#- Scouting
+#- Sorcery
+- Stealth
+#- Thievery
+#- Theurgy
+#- Trading
 
 waggle_sets:
 health_threshold: 50
