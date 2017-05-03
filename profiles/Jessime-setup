@@ -161,9 +161,18 @@ crossing_training:
 #- Outfitting
 - Mechanical Lore
 listen: true
+forage_item: rock
+braid_item: grass
 favor_goal: 8
 favor_god: Trothfang
 
+quit_on_status_warning: true
+braid_item: grass
+saferoom_health_threshold: 25
+safe_room: 6164
+safe_room_id:  6164
+status_monitor_no_window: true
+bankbot_deposit_threshold: 0
 crossing_training_requires_movement:
 #- Alchemy
 # - Appraisal
@@ -187,6 +196,7 @@ depart_on_death: false
 afk_justice_threshold: 4
 quit_on_status_warning: false
 status_monitor_no_window: false
+
 
 listen_skills:
 - Large Edged
@@ -235,11 +245,4 @@ listen_skills:
 # For ;afk
 health_threshold: 60
 
-quit_on_status_warning: true
-braid_item: grass
-saferoom_health_threshold: 25
-safe_room: 6164
-safe_room_id:  6164
-status_monitor_no_window: true
-bankbot_deposit_threshold: 0
 
