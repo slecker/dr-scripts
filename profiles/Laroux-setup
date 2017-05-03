@@ -106,6 +106,7 @@ training_abilities:
   Perc: 120
   Scream: 15
 weapon_training:
+  Small Edged
   Brawling: ''
 use_stealth_attacks: true
 skinning:
