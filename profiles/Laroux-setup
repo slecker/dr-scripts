@@ -13,12 +13,14 @@
 # Hunting settings
 training_manager_hunting_priority: true
 training_manager_priority_skills:
+- Small Edged
 - Brawling
 - Parry
 - Light Armor
 hunting_info:
 - :zone: rats
   stop_on:
+  - Small Edged
   - Brawling
   - Parry
   - Light Armor
