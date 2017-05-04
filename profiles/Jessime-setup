@@ -29,6 +29,8 @@ stances:
 fatigue_regen_threshold: 35
 dance_threshold: 0
 
+use_barb_combos: true
+
 # Hunting settings
 training_manager_hunting_priority: true
 training_manager_priority_skills:
@@ -51,6 +53,7 @@ hunting_info:stop_on:
 hunting_info:zone: beisswurms
 #hunting_info:args:
 
+
 # Combat settings
 buff_nonspells:
   berserk avalanche: 60
@@ -61,8 +64,9 @@ training_abilities:
 weapon_training:
 weapon_training:
   Small Edged: scimitar
-  Light Thrown: rock
+  Light Thrown: bulhawf
   Brawling: ''
+  Offhand Weapon: bulhawf
   Large Edged: black steel sword
 use_stealth_attacks: true
 skinning:
@@ -75,6 +79,18 @@ skinning:
  - rock
  - rocks
 
+charged_maneuvers:
+  Brawling: palmstrike
+  Crossbow: powershot
+  Slings: powershot
+  Small Edged: cleave
+  Large Edged: cleave
+  Twohanded Edged: cleave
+  Small Blunt: crash
+  Large Blunt: crash
+  Twohanded Blunt: crash
+  Staves: twirl
+  Polearms: impale
 
 # Gear settings
 gear:
@@ -172,6 +188,8 @@ braid_item: grass
 saferoom_health_threshold: 25
 safe_room: 6164
 safe_room_id:  6164
+training_rooms:
+- 1387
 status_monitor_no_window: true
 bankbot_deposit_threshold: 0
 crossing_training_requires_movement:
