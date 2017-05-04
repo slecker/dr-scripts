@@ -15,6 +15,7 @@ training_manager_hunting_priority: true
 training_manager_priority_skills:
 - Small Edged
 - Brawling
+- Light Thrown
 - Parry
 - Light Armor
 hunting_info:
@@ -23,6 +24,7 @@ hunting_info:
   - Small Edged
   - Brawling
   - Parry
+  - Light Thrown
   - Light Armor
   - Tactics
   - Skinning
@@ -96,11 +98,11 @@ gear_sets:
 
 # Combat settings
 buff_spells:
-  Faenella's Grace:
-    abbrev: FAE
+  Redeemer's Pride:
+    abbrev: REPR
     recast: 1
     mana: 1
-    cambrinth:
+    cambrinth: cambrinth ring
     - 1
 dance_skill: Brawling
 training_abilities:
@@ -145,7 +147,7 @@ training_spells:
   Augmentation:
     abbrev: FAE
 safe_room: 984
-#cambrinth: cambrinth ring
+cambrinth: cambrinth ring
 #cambrinth_cap: 2
 favor_goal: 3
 favor_god: Faenella
