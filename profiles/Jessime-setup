@@ -41,23 +41,23 @@ training_manager_priority_skills:
 - Large Edged
 - Shield
 hunting_zones:
-- :zone: 7263
+- :zone: 19222
 hunting_info:
-- :zone: 7263
+- :zone: 19222
   duration: 30
 hunting_info:stop_on:
   - Brawling
   - Light Thrown
   - Small Edged
   - Parry
-hunting_info:zone: beisswurms
+#hunting_info:zone: beisswurms
 #hunting_info:args:
 
 
 # Combat settings
 buff_nonspells:
   berserk avalanche: 60
-dance_skill: Large Edged
+dance_skill: Small Edged
 training_abilities:
   Charged Maneuver: 30
   Stealth: 60
@@ -68,6 +68,8 @@ weapon_training:
   Brawling: ''
   Offhand Weapon: bulhawf
   Large Edged: black steel sword
+  Staves: quarterstaff
+  Bow: an azurelle longbow
 use_stealth_attacks: true
 skinning:
   skin: true
