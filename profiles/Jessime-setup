@@ -40,18 +40,12 @@ training_manager_priority_skills:
 - Small Edged
 - Large Edged
 - Shield
-hunting_zones:
-- :zone: 19222
 hunting_info:
 - :zone: 19222
   duration: 30
-hunting_info:stop_on:
+stop_on:
   - Brawling
-  - Light Thrown
   - Small Edged
-  - Parry
-#hunting_info:zone: beisswurms
-#hunting_info:args:
 
 
 # Combat settings
@@ -94,6 +88,18 @@ charged_maneuvers:
   Staves: twirl
   Polearms: impale
 
+gear_sets:
+  standard:
+  - a metal chain helm
+  - some perfect azure-scaled leathers
+  - rugged gloves
+  - a metal target shield
+  - parry stick
+  - brass knuckles
+  - silver-chased elbow spikes
+  - steel knee spikes
+  naked: []
+  
 # Gear settings
 gear:
 # - :adjective: example
@@ -218,6 +224,35 @@ afk_justice_threshold: 4
 quit_on_status_warning: false
 status_monitor_no_window: false
 
+crafting_container: backpack
+hand_armor: gloves
+
+train_workorders: Outfitting
+
+knitting_tools:
+- knitting needle
+- sewing needle
+- slickstone
+- yardstick
+- scissor
+- stamp
+mining_buddy_vein_list:
+# - Gold
+# - Platinum
+- Lumium
+#- Darkstone
+- Damite
+- Kertig
+- Haralun
+- Glaes
+- Animite
+#- Quartzite
+
+mines_to_mine:
+- waterfall
+- wicked_burrow
+- stone_clan
+- abandoned_mine
 
 listen_skills:
 - Large Edged
@@ -266,4 +301,26 @@ listen_skills:
 # For ;afk
 health_threshold: 60
 
+crossing_training_requires_movement:
+#- Alchemy
+# - Appraisal
+- Athletics
+#- Attunement
+#- Empathy
+#- Engineering
+#- Forging
+- Outfitting
+#- Scouting
+#- Sorcery
+- Stealth
+#- Thievery
+#- Theurgy
+#- Trading
 
+exp_timers:
+  First Aid: 400
+  Locksmithing: 600
+  Thievery: 600
+  Attunement: 120
+  Utility: 240
+  Augmentation: 240
