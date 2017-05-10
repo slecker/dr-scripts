@@ -41,11 +41,12 @@ training_manager_priority_skills:
 - Large Edged
 - Shield
 hunting_info:
-- :zone: 19222
+- :zone: rock_trolls
   duration: 30
 stop_on:
   - Brawling
   - Small Edged
+  - Light Thrown
 
 
 # Combat settings
