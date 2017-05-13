@@ -1,16 +1,38 @@
----
+#---
+safe_room: 8926
+#---
+hometown: Crossing
+#---
+slack_username: littlered
+#---
+quit_on_status_warning: false
+#---
+
 training_manager_hunting_priority: true
 training_manager_priority_skills:
 - Evasion
 
+############# HUNTING VARIABLES ################
+
+hunting_file_list:
+ - setup
+
 hunting_info:
-- :zone: river_sprites
-  args:
-  - d8
+- :zone: origami_creature
+   - 8433
+   - 8434
+   - 8430
+   - 8431
+   - 8429
+   - 8428
+   - 8427
+   - 8426
+
   :duration: 30
+
 gear:
 - :name: leathers
-  :adjective: coarse
+  :adjective: rugged
   :is_leather: true
   :is_worn: true
   :hinders_lockpicking: false
@@ -19,32 +41,35 @@ gear:
   :is_worn: true
   :hinders_lockpicking: true
 - :name: gloves
-  :adjective: coarse
+  :adjective: rugged
   :is_leather: true
   :is_worn: true
   :hinders_lockpicking: true
-- :name: cowl
-  :adjective: coarse
+- :name: balaclava
+  :adjective: chain
   :is_leather: true
   :is_worn: true
   :hinders_lockpicking: true
-- :name: club
+- :name: quarterstaff
   :is_leather: false
   :is_worn: false
+
 gear_sets:
   standard:
   - a metal target shield
-  - a coarse gargoyle-hide cowl with fitted seams
-  - some coarse gargoyle-hide leathers with fitted seams
-  - some coarse gargoyle-hide gloves with fitted seams
+  - some rugged leathers
+  - some rugged leather gloves
+  - a midnight scaled balaclava
+
 weapon_training:
+  Staves: quarterstaff
   Brawling: ''
-  Small Blunt: club
 
 skinning:
   skin: true
   arrange_all: false
   arrange_count: 0
+
 dance_skill: Brawling
 dance_actions:
 - bob
@@ -54,15 +79,7 @@ dance_actions_stealth:
 - stalk
 - bob
 stances:
-  Bow:
-  - Evasion
-  - Shield Usage
-  - Parry Ability
-  Crossbow:
-  - Evasion
-  - Shield Usage
-  - Parry Ability
-  Slings:
+  Staves:
   - Evasion
   - Shield Usage
   - Parry Ability
@@ -70,6 +87,21 @@ stances:
   - Evasion
   - Shield Usage
   - Parry Ability
+
+loot_subtractions:
+  - rock
+
+loot_bodies: true
+
+gem_pouch_adjective: blue
+sell_loot_bundle: false
+sell_loot_pouch: false
+spare_gem_pouch_container: backpack
+storage_containers:
+- backpack
+
+######################## MAGIC ###########################
+
 offensive_spells:
 # - skill: Targeted Magic
 #   name: Guardian Spirit
@@ -78,32 +110,62 @@ offensive_spells:
 #   mana: 8
 #   harmless: true
 #   command: WARRIOR TO BEHAVIOR AGGRESSIVE
-- skill: Targeted Magic
-  name: Paralysis
-  abbrev: paralysis
-  mana: 8
-  harmless: true
-- skill: Debilitation
-  name: Lethargy
-  abbrev: lethargy
-  mana: 8
-  harmless: true
+#- skill: Targeted Magic
+#  name: Paralysis
+#  abbrev: paralysis
+#  mana: 8
+#  harmless: true
+#- skill: Debilitation
+#  name: Lethargy
+#  abbrev: lethargy
+#  mana: 8
+#  harmless: true
+
 training_abilities:
   Hunt: 80
   App Quick: 60
   Perc: 120
   Perc Health: 120
+
 #manipulate_threshold: 2
+
+train_with_spells: true
 training_spells:
-  Warding:
-    abbrev: IC
   Augmentation:
-    abbrev: GOL
-    symbiosis: true
+    abbrev: XXXXXX
+  Warding:
+    abbrev: XXXXXX
   Utility:
-    abbrev: HW
-    symbiosis: true
-    cast: cast chest
+    abbrev: XXXXXX
+
+dedicated_camb_use: spell
+ train_with_spells: true
+ use_research: false
+ cambrinth: anklet
+ stored_cambrinth: false
+ prep_scaling_factor: 0.85
+ cambrinth_cap: 5
+
+############################ HUNTING BUDDY ###############################
+
+hunting_info:
+- :zone: origami_creature
+  args:
+  - d0
+  :duration: 20
+  stop_on:
+  - Shield
+  - Quarterstaff
+
+#prehunt_buffs: 1645   # Crossing - [Birch Copse, Aevren Mod - 1645]
+
+training_manager_hunting_priority: true
+training_manager_priority_skills:
+- Shield
+- Quarterstaff
+
+############################ CROSSING TRAINING ############################
+
 hand_armor: gloves
 listen: true
 crossing_training:
@@ -117,53 +179,72 @@ crossing_training:
 - Mechanical Lore
 - Outdoorsmanship
 - Scholarship
-safe_room: 8926
+
 braid_item: grass
-# use_research: true
-# research_skills:
-# - Life Magic
-# - Arcana
-# - Utility
-# - Augmentation
-# - Warding
+ use_research: true
+ research_skills:
+ - Life Magic
+ - Arcana
+ - Utility
+ - Augmentation
+ - Warding
+
+listen: true
+
+exp_timers:
+  Athletics: 180
+  Attunement: 130
+  First Aid: 360
+  Locksmithing: 600
+  Mechanical Lore: 200
+  Outdoorsmanship: 200
+  Scholarship: 150
+
+#safe_room: 11128
+# training_rooms:
+#   - 1230
+#   - 6211
+#   - 11128
+#   - 6162
+
+############################# HEALING #####################################
+
 empath_healing:
   VH:
-  - 5
-  - 5
+  - 2
+  - 2
   HW:
-  - 12
-  - 12
+  - 3
+  - 2
   HS:
-  - 12
-  - 12
+  - 3
+  - 3
   HEAL:
-  - 15
-  - 5
-  - 5
+  - 2
+  - 2
+  - 2
 
 buff_spells:
-  Manifest Force:
-    abbrev: maf
+  Ease Burden:
+    abbrev: ease
     recast: 1
     mana: 15
-    cambrinth:
-    - 10
-    - 10
+    cambrinth: anklet
+    - 2
+    - 1
   # Absolution:
   #   abbrev: absolution
   #   recast: 5
   #   mana: 450
   #   ritual: true
   #   focus: leather bag
-  Iron Constitution:
-    abbrev: ic
-    recast: 1
-    mana: 15
-    cambrinth:
-    - 10
-    - 10
-
-dedicated_camb_use: spell
+  #Iron Constitution:
+  #  abbrev: ic
+  #  recast: 1
+  #  mana: 15
+  #  cambrinth:
+  #  - 10
+  #  - 10
 
 waggle_sets:
   default:
@@ -172,15 +253,15 @@ waggle_sets:
       recast: 1
       mana: 15
       cambrinth:
-      - 12
-      - 12
+      - 4
+      - 1
     Blood Staunching:
       abbrev: bs
       recast: 0
       mana: 10
       cambrinth:
-      - 12
-      - 12
+      - 4
+      - 1
   town-training:
     Regenerate:
       abbrev: regen
@@ -191,3 +272,41 @@ ignored_npcs:
 - warrior
 
 health_threshold: 20
+
+######################### CRAFTING #################################
+
+textbook: true
+textbook_type: guide
+
+tailoring:
+  Crossing:
+    npc: Milline
+    npc_last_name: Milline
+    npc-rooms:
+    - 16657
+    - 16656
+    - 16659
+    - 16665
+    - 16668
+    - 16667
+    - 16661
+    - 16663
+    sewing-rooms:
+    - 19_037
+    - 19_036
+    - 16_670
+    # - 19_063
+    - 19_064
+    - 19_065
+    spinning-rooms:
+    - 16670
+    - 19036
+    - 19037
+    logbook: outfitting
+    repair-room: 16659
+    repair-npc: clerk
+    stock-room: 16667
+    tool-room: 16668
+    stock-number: 13
+    pattern-book: tailoring
+    idle-room:
