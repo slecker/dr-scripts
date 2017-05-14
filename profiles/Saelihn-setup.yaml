@@ -208,7 +208,9 @@ exp_timers:
 #   - 6162
 
 ############################# HEALING #####################################
-
+cambrinth: anklet
+held_cambrinth: anklet
+healme_debug: true
 empath_healing:
   VH:
   - 2
@@ -219,10 +221,10 @@ empath_healing:
   HS:
   - 3
   - 3
-  HEAL:
-  - 2
-  - 2
-  - 2
+#  HEAL:
+#  - 2
+#  - 2
+#  - 2
 
 buff_spells:
   Ease Burden:
